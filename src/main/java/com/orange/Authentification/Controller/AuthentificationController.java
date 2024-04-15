@@ -1,7 +1,8 @@
-package com.orange.Authentification;
+package com.orange.Authentification.Controller;
 
-import com.orange.Authentification.Service.Impl.AuthenticationService;
-import com.orange.Authentification.user.User;
+import com.orange.Authentification.AuthentificationResponse;
+import com.orange.Authentification.Service.Impl.AuthenticationServiceImplement;
+import com.orange.Authentification.Entity.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 @RequiredArgsConstructor
 public class AuthentificationController {
-    private final AuthenticationService authenticationService;
+    private final AuthenticationServiceImplement authenticationService;
 
     @PostMapping("/register")
     public  ResponseEntity<User>  registrer (@RequestBody User user)

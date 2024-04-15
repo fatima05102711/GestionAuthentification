@@ -1,11 +1,11 @@
 package com.orange.Authentification.user;
 
+import com.orange.Authentification.Entity.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.engine.internal.Cascade;
 
 @AllArgsConstructor
 @NoArgsConstructor

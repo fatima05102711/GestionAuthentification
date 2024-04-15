@@ -1,6 +1,6 @@
 package com.orange.Authentification.Repository;
 
-import com.orange.Authentification.user.User;
+import com.orange.Authentification.Entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

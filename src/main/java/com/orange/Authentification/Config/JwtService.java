@@ -1,4 +1,4 @@
-package com.orange.Authentification;
+package com.orange.Authentification.Config;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

@@ -1,11 +1,10 @@
 package com.orange.Authentification.Service.Impl;
 
 import com.orange.Authentification.AuthentificationResponse;
-import com.orange.Authentification.JwtService;
+import com.orange.Authentification.Config.JwtService;
 import com.orange.Authentification.Repository.UserRepository;
-import com.orange.Authentification.Role;
-import com.orange.Authentification.Service.Impl.AuthentificationService1;
-import com.orange.Authentification.user.User;
+import com.orange.Authentification.Entity.Role;
+import com.orange.Authentification.Entity.User;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -15,7 +14,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class AuthenticationService implements AuthentificationService1 {
+public class AuthenticationServiceImplement implements AuthentificationService1 {
 
       private final PasswordEncoder passwordEncoder;
       private final UserRepository userRepository;
